@@ -123,7 +123,7 @@ def convert_frequencies_to_circle_radii(pixel_counts):
     for key in pixel_counts.keys():
         value = pixel_counts[key]
         # set a large radius to make the circle visible
-        radius = value + 2
+        radius = value + 3
         pixel_sizes[key] = radius
     return pixel_sizes
 
@@ -141,11 +141,11 @@ def draw(pixel_locs_with_sizes):
     
     # set graphical options. Different color options for the color map and
     # for the BW map, for better contrast. 4th value is alpha.
-    stroke_color_Color = "black"
-    stroke_color_BW = "orange"
+    stroke_color_Color = (0,0,0,255)
+    stroke_color_BW = (255,165,0,255)
     stroke_thickness = 2
-    internal_color_Color = "white"
-    internal_color_BW = "red"
+    internal_color_Color = (255,255,255,100)
+    internal_color_BW = (200,0,0,255)
 
     for (x,y),radius in pixel_locs_with_sizes.iteritems():
         # we draw two circles: an underlying, larger one to act as the stroke
@@ -156,11 +156,11 @@ def draw(pixel_locs_with_sizes):
         y = int(y)
         stroke = (x - distance, y - distance, x + distance, y + distance)
         draw_BW.ellipse(stroke,fill=stroke_color_BW)
-        draw_Color.ellipse(stroke,fill=stroke_color_Color)
+        #draw_Color.ellipse(stroke,fill=stroke_color_Color)
 
         inside = (x - radius, y - radius, x + radius, y + radius)
-        draw_BW.ellipse(inside, fill= internal_color_BW)
-        draw_Color.ellipse(inside, fill= internal_color_Color)
+        draw_BW.ellipse(inside, fill= internal_color_BW) # outline = stroke_color_BW)
+        draw_Color.ellipse(inside, fill= internal_color_Color, outline = stroke_color_Color)
 
     # assuming you won't call this more frequently than once per second...
     timestamp = str(int(time()))
