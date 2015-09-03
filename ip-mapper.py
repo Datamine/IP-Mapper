@@ -50,9 +50,9 @@ def convert_ip_to_coordinates(ips):
     for ip in ips.keys():
         match = geolite2.lookup(ip)
         if match is None:
-            stderr.write("No match found for IP: " + ip)
+            stderr.write("No match found for IP: " + ip+"\n")
         elif match.location is None:
-            stderr.write("Match found, but no location found for IP: " + ip)
+            stderr.write("Match found, but no location found for IP: " + ip+"\n")
         else:
             (lat,lon) = match.location
             # grab the frequency count
