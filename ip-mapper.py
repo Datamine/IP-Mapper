@@ -134,8 +134,8 @@ def draw(pixel_locs_with_sizes):
     and appropriately places circles on the Robinson maps, then timestamps
     and saves them.
     """
-    Robinson_BW = Image.open('Robinson_BW.png')
-    Robinson_Color = Image.open('Robinson_Color.png')
+    Robinson_BW = Image.open('maps/Robinson_BW.png')
+    Robinson_Color = Image.open('maps/Robinson_Color.png')
     draw_BW = ImageDraw.Draw(Robinson_BW,'RGBA')
     draw_Color = ImageDraw.Draw(Robinson_Color,'RGBA')
     
