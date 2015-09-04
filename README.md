@@ -12,6 +12,7 @@ Input files should be formatted as a frequency count (integer) followed by a spa
 (The IPs listed therein have been [randomly generated](http://sqa.fyicenter.com/Online_Test_Tools/Test_IP_Address_Generator.php).)
 
 There are two output maps:   
+
     1. A black-and-white one, which displays all datapoints in a high-contrast red, so they can be easily geographically identified.  
     2. A colored one, which displays transparent datapoints, so it is easier to gauge the geographical frequency of IPs over small areas.  
 
