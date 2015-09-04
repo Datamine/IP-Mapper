@@ -11,9 +11,9 @@ previous [Travelmap](https://github.com/Datamine/Travelmap) project.
 Input files should be formatted as a frequency count (integer) followed by a space, an IPv4 address, and a newline. An example is included: `example-input.txt`.
 (The IPs listed therein have been [randomly generated](http://sqa.fyicenter.com/Online_Test_Tools/Test_IP_Address_Generator.php).)
 
-There are two output maps: 
-    1. A black-and-white one, which displays all datapoints in a high-contrast red, so they can be easily geographically identified.
-    2. A colored one, which displays transparent datapoints, so it is easier to gauge the geographical frequency of IPs over small areas.
+There are two output maps:   
+    1. A black-and-white one, which displays all datapoints in a high-contrast red, so they can be easily geographically identified.  
+    2. A colored one, which displays transparent datapoints, so it is easier to gauge the geographical frequency of IPs over small areas.  
 
 ### Required Libraries:
 * python-geoip (http://pythonhosted.org/python-geoip/)
