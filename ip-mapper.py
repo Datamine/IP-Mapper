@@ -3,7 +3,7 @@ John Loeber | September 3, 2015 | Python 2.7.9 | Debian Linux
 
 input: one command-line argument: the name of the file containing the data.
        also: Robinson_BW.png and Robinson_Color.png are required to be
-       in the same directory.
+       in the subdirectory "maps".
 output: two .png files, BW_<timestamp>.png and Color_<timestamp>.png.
 timestamp is taken when the script finishes executing.
 """
