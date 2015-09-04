@@ -13,9 +13,9 @@ Input files should be formatted as a frequency count (integer) followed by a spa
 
 There are two output maps:   
 
-**1.** A black-and-white one, which displays all datapoints in a high-contrast red, so they can be easily geographically identified. [Example](https://raw.githubusercontent.com/Datamine/IP-Mapper/master/BW_1441336647.PNG).  
+**1.** A black-and-white one, which displays all datapoints in a high-contrast red, so they can be easily geographically identified. [Example](https://raw.githubusercontent.com/Datamine/IP-Mapper/2bd8aa6f9a7826f322133aef4cd27d453e96fb7d/BW_1441336647.PNG).  
 
-**2.** A colored one, which displays transparent datapoints, so it is easier to gauge the geographical frequency of IPs over small areas. [Example](https://raw.githubusercontent.com/Datamine/IP-Mapper/master/Color_1441336647.PNG).  
+**2.** A colored one, which displays transparent datapoints, so it is easier to gauge the geographical frequency of IPs over small areas. [Example](https://raw.githubusercontent.com/Datamine/IP-Mapper/2bd8aa6f9a7826f322133aef4cd27d453e96fb7d/Color_1441336647.PNG).  
 
 ### Required Libraries:
 * python-geoip (http://pythonhosted.org/python-geoip/)
